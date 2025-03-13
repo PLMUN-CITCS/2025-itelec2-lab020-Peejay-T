@@ -12,5 +12,4 @@ def check_even_odd(number):
         return f"{number} is an Odd number."
 
 num = get_integer_input() 
-result = check_even_odd(num)
-print(result)
+print(check_even_odd(num))
