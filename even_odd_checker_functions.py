@@ -6,7 +6,7 @@ def get_integer_input():
 def check_even_odd(number):
     if number % 2 == 0:
         return f"{number} is an Even number."
-    elif:
+    else:
         return f"{number} is an Odd number."
 
 num = get_integer_input() 
