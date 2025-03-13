@@ -11,7 +11,6 @@ def check_even_odd(number):
     else:
         return f"{number} is an Odd number."
 
-# Main Program Flow
-num = get_integer_input()  # Get user input
-result = check_even_odd(num)  # Check if it's even or odd
-print(result)  # Display the result
+num = get_integer_input() 
+result = check_even_odd(num)
+print(result)
