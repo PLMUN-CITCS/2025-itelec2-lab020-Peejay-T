@@ -1,33 +1,17 @@
-def get_integer_input(prompt: str) -> int:
-    """
-    Prompts the user for an integer input and validates the input.
-    
-    Args:
-        prompt (str): The message displayed to the user.
-    
-    Returns:
-        int: A valid integer input from the user.
-    """
+def get_integer_input():
     while True:
         try:
-            return int(input(prompt))
+            return int(input("Enter an integer: "))
         except ValueError:
-            print("Invalid input! Please enter a valid integer.")
+            print("Invalid input. Please enter a valid integer.")
 
-def check_even_odd(number: int) -> str:
-    """
-    Determines whether a given number is even or odd.
-    
-    Args:
-        number (int): The number to check.
-    
-    Returns:
-        str: A message stating whether the number is even or odd.
-    """
-    return f"{number} is an Even number." if number % 2 == 0 else f"{number} is an Odd number."
+def check_even_odd(number):
+    if number % 2 == 0:
+        return f"{number} is an Even number."
+    else:
+        return f"{number} is an Odd number."
 
-# Main program execution
-if __name__ == "__main__":
-    user_number = get_integer_input("Enter an integer: ")
-    result = check_even_odd(user_number)
-    print(result)
+# Main Program Flow
+num = get_integer_input()  # Get user input
+result = check_even_odd(num)  # Check if it's even or odd
+print(result)  # Display the result
